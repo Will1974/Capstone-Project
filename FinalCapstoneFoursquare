@@ -1,0 +1,30 @@
+The Problem
+------------
+The problem will be to find the nearest phone shop in a 1km radius of the Hilton Hotel in Brisbane City centre.
+
+In this particular problem the audience would be guests staying at the hotel and hotel staff.
+This will serve all customers that stay at the hotel that encounter phone problem and need replacement phones, Charger, and SIM cards.
+
+We will start by converting the Hotel address (190 Elizabeth St, Brisbane City QLD 4000) to longitude/Latitude coordinates.
+We will build up a URL to invoke the Foursquare API containing search criteria for 'Phones'.
+The results returned from Foursquare API will be loaded into a dataframe.
+
+We will then apply some filtering to clean the data and finally diplay the results on a map.
+
+
+The data
+---------
+Initially we will use the Address to get the Longtitude/Latitude Coordinates.
+The results returned from Foursquare API will be in json format. 
+These results contain information such as Venues, Ratings and Items.
+We will also invoke http://api.foursquare.com/v1/history to get the 'Checkin History' for the Venue.
+
+All these results will be loaded into a Panda Dataframe. 
+From here we will be able to do further data manipulations such as Normalising, Filtering and displaying on a Map.
+
+
+
+Conclusion
+-----------
+From the results set in the map we can that there is only one store in the 1 km radius that has phones in the name.
+This is apparent in both the data set as well as the Folium map also.
