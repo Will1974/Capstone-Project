@@ -1,0 +1,18 @@
+The Problem
+------------
+The problem will be to find the nearest phone shop in a 1km radius of the Hilton Hotel in Brisbane City centre.
+The address of the Hotel is:
+190 Elizabeth St,
+Brisbane City,
+QLD 4000,
+Australia
+
+The Audience
+------------
+In this particular problem the audience would be guests staying at the hotel and hotel staff.
+This will serve all customers that stay at the hotel that encounter phone problems and need replacement phones, Charger, and SIM cards.
+
+Initially we will convert the Hotel address (190 Elizabeth St, Brisbane City QLD 4000) to longitude/Latitude coordinates.
+We will build up a URL to invoke the Foursquare API containing search criteria for 'Phones'.
+
+We will then apply some filtering to clean the data and finally diplay the results on a map.
