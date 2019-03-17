@@ -1,0 +1,9 @@
+The data
+---------
+Initially we will use the Address to get the Longtitude/Latitude Coordinates.
+The results returned from Foursquare API will be in json format. 
+These results contain information such as Venues, Ratings and Items.
+We will also invoke http://api.foursquare.com/v1/history to get the 'Checkin History' for the Venue.
+
+All these results will be loaded into a Panda Dataframe. 
+From here we will be able to do further data manipulations such as Normalising, Filtering and displaying on a Map.
